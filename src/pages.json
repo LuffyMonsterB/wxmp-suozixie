@@ -1,0 +1,49 @@
+{
+	"pages": [
+		{
+			"path": "pages/uploadImagePage/uploadImagePage",
+			"style": {
+				"navigationBarTitleText": "梭子蟹上传模块"
+			}
+		},	
+			{
+			"path": "pages/cropIdentifyImagePage/cropIdentifyImagePage",
+			"style": {
+				"navigationBarTitleText": "图片裁剪"
+			}
+			},
+		{
+			"path": "pages/identifyImagePage/identifyImagePage",
+			"style": {
+				"navigationBarTitleText": "梭子蟹识别模块"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#bdbdbd",
+		"selectedColor": "#333333",
+		"borderStyle": "black" ,
+		"list": [{
+		  "selectedIconPath": "static/tabbar/upload-fill.png",
+		  "iconPath": "static/tabbar/upload.png",
+		  "pagePath": "pages/uploadImagePage/uploadImagePage",
+		  "text": "上传"
+		}, 
+		
+		{
+		  "selectedIconPath": "static/tabbar/filter-fill.png",
+		  "iconPath": "static/tabbar/filter.png",
+		  "pagePath": "pages/identifyImagePage/identifyImagePage",
+		  "text": "识别"
+		}]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"usingComponents":{
+			"image-cropper":"/wxcomponents/image-cropper/image-cropper"
+		   }
+	}
+}
